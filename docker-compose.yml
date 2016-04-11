@@ -1,5 +1,5 @@
 compphp:
-    image: ef4c8dfd7620
+    image: compare-php
     volumes:
         - ./:/var/www/app
     ports:
