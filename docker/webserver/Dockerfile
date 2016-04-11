@@ -52,7 +52,12 @@ RUN chmod -R 777 /mnt/phptemp
 
 RUN usermod -u 1000 www-data
 
-RUN mkdir -p /var/www/
+RUN mkdir -p /var/www/app
+ADD vhost.conf /etc/apache2/sites-available/
+RUN ln -s /etc/apache2/sites-available/vhost.conf /etc/apache2/sites-enabled/vhost.conf
+
+
+RUN mkdir -p /var/www/app
 RUN /etc/init.d/apache2 restart
 
 

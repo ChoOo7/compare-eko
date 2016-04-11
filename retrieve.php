@@ -4,7 +4,7 @@ require_once(__DIR__.'/functions.php');
 
 function getProductsOfPage($page = 0)
 {
-    $cacheFile = "/tmp/compare-cache-".$page;
+    $cacheFile = __DIR__."/cache/compare-cache-".$page;
     $cnt = null;
     if( ! file_exists($cacheFile))
     {
