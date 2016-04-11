@@ -32,9 +32,9 @@ if(count($products) == 0)
         break;
     }
 }else{
-  echo "\n".count($products).' matches'."\n";
+  echo "\n".count($products).' matches'."\n<br />";
   foreach($products as $product)
   {
-    echo "\n".$product['name'];
+    echo "\n<br />".$product['brand']. ' - '.$product['name'];
   }
 }
