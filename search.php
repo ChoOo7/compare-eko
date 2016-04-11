@@ -30,6 +30,12 @@ if(count($products) == 0)
     case 'img':
         echo $product['imgUrl'];
         break;
+    case 'all':
+        foreach($product as $k=>$v)
+        {
+            echo "\n<br />".$k.' => '.$v;
+        }
+        break;
     }
 }else{
   echo "\n".count($products).' matches'."\n<br />";
