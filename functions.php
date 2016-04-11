@@ -44,6 +44,7 @@ function searchInElastic($term)
     $params['query'] = array();
     $params['query']['query_string'] = array();
     $params['query']['query_string']['query'] = $term;
+    $params['size'] = 9999;
     //$params['query']['query_string']['default_field'] = "text";
 
     
