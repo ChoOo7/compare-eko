@@ -1,0 +1,15 @@
+#!/bin/bash
+
+alias sf='php symfony'
+alias composer='php composer.phar'
+alias cde='cd /etc/apache2/sites-enabled'
+alias rmysql='php batch/common/utils/mysql_connect.php'
+alias tailez='tail -f /mnt/phptemp/log/*.log /mnt/phptmp/*/log/*.log log/*.log'
+alias cdez='cd /var/eztv-www'
+export TERM=xterm
+
+COLUMNS=172;
+LINES=25;
+export COLUMNS LINES;
+
+cd /var/www/eztv

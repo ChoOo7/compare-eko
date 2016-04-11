@@ -1,0 +1,13 @@
+compphp:
+    image: ef4c8dfd7620
+    volumes:
+        - ./:/var/www/app
+    ports:
+        - "89:80"
+    links:
+        - compelasticsearch
+
+compelasticsearch:
+    image: compare-elasticsearch
+    expose:
+        - "9200"
